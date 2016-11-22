@@ -1,0 +1,63 @@
+body,
+figure.interactive {
+    margin: 0;
+    padding: 0;
+    background-color: #EAEAEA;
+}
+
+// Link styles don't exist on the app
+a {
+    &,
+    &:hover,
+    &:active {
+        color: inherit;
+    }
+
+    text-decoration: none;
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+.interactive-container {
+    margin: 0 auto;
+    box-sizing: border-box;
+    background-color: #f1f1f1;
+    overflow: auto;
+    position: relative;
+
+    padding: 0;
+    @include mq(mobileLandscape) {
+        padding: 0;
+    }
+
+    @each $bp in (tablet, desktop, leftCol, wide) {
+        @include mq($bp) {
+            max-width: map-get($mq-breakpoints, $bp);
+        }
+    }
+}
+
+.interactive-es6-headline {
+	@include fs-headline(5);
+}
+
+.test-msg {
+	color: #005689;
+	@include fs-textSans(3);
+}
+
+.fonts {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	margin-top: 24px;
+	li {
+		margin-bottom: 6px;
+	}
+}
+
+.fonts__egyptian { @include fs-headline(3); }
+.fonts__text-egyptian { @include fs-bodyCopy(2); }
+.fonts__sans { @include f-headlineSans; }
+.fonts__text-sans { @include fs-textSans(4); }

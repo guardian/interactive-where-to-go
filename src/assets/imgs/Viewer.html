@@ -1,0 +1,114 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Viewer</title>
+        <link rel="stylesheet" type="text/css" href="/assets/styles/11a56cbe31325bb53e45537842b6f71e-index.css" />
+        <link rel="shortcut icon" type="image/png" href="/assets/images/e544906232d2d59def703fc2b5327379-fav-viewer-32.png"/>
+    </head>
+    <body class="is-mobile-portrait">
+
+        
+    <header class="fixed-header">
+        <div class="top-toolbar">
+            <div class="top-toolbar__logo">
+                <a class="top-toolbar__logo-link" href="https://composer.gutools.co.uk/find-by-path/books/ng-interactive/2016/sep/03/tinker-tailor-writer-spy-the-many-lives-of-john-le-carre-in-his-own-words" title="Return to composer"></a>
+            </div>
+
+            <div class="top-toolbar__view-toolbar">
+                <ul class="tool-bar">
+                    <li class="top-toolbar__container">
+                        
+                            <div class="top-toolbar__status--preview">DRAFT</div>
+                        
+                    <!--</li>-->
+                    <li class="top-toolbar__container">
+                        <div class="top-toolbar__label">Mobile web</div>
+                        <div class="viewer-orientation">
+                            <div class="viewer-orientation__button is-selected" data-switchmode="mobile-portrait"><i class="top-toolbar__icon--mobile-portrait"></i></div>
+                            <div class="viewer-orientation__button" data-switchmode="mobile-landscape"><i class="top-toolbar__icon--mobile-landscape"></i></div>
+                        </div>
+                    <!--</li>-->
+                    <li class="top-toolbar__button" data-app-preview="true">
+                        <i class="top-toolbar__button--appApple"></i>
+                        <i class="top-toolbar__button--appAndroid"></i>
+                        Get app preview link
+                    <!--</li>-->
+                    
+                        <li data-switchmode="social-share" class="top-toolbar__button is-always-visible"><i class="top-toolbar__icon--socialshare"></i>Social share<!--</li>-->
+                        <li data-switchmode="reader" class="top-toolbar__button is-always-visible"><i class="top-toolbar__icon--copycheck"></i>Copy taste<!--</li>-->
+                        <li class="top-toolbar__button--mobilecheck" data-toggledesktop="true"><i class="top-toolbar__icon--checkbox"></i>Mobile checked & verified<!--</li>-->
+                        <li data-switchmode="desktop" class="top-toolbar__button--desktop"><i class="top-toolbar__icon--desktop"></i>Desktop<!--</li>-->
+                        <li class="top-toolbar__button--blockads" data-toggleads="true"><i class="top-toolbar__icon--checkbox"></i>Block ads<!--</li>-->
+                    
+
+                    <li class="top-toolbar__button--right" data-print="true"><i class="top-toolbar__icon--printer"></i>Print version<!--</li>-->
+                </ul>
+            </div>
+        </div>
+        
+            <div class="info-bar hide-desktop-enabled hide-reader-mode">To enable desktop preview you need to check and verify mobile first</div>
+        
+        <div class="info-bar show-reader-mode">Copy taste presents you with a distraction free view of the article content. If you have any feedback please email the <a href="mailto:digitalcms.dev@guardian.co.uk">Digital CMS</a> team</div>
+        <div id="errorbar" class="error-bar"></div>
+        <div id="messageBar" class="message-bar"></div>
+    </header>
+
+
+
+    <div class="content">
+        <div class="viewers">
+            <iframe id="viewer" class="viewer is-mobile-portrait" src="/proxy/preview/books/ng-interactive/2016/sep/03/tinker-tailor-writer-spy-the-many-lives-of-john-le-carre-in-his-own-words#noads"></iframe>
+        </div>
+    </div>
+
+    <script>
+        window._baseAppUrl = '/preview';
+        window._previewEnv = "preview";
+        window._actualUrl = "https://preview.gutools.co.uk/books/ng-interactive/2016/sep/03/tinker-tailor-writer-spy-the-many-lives-of-john-le-carre-in-his-own-words";
+        window._proxyBase = "https://viewer.gutools.co.uk/proxy/preview/"
+        window._originalPath = "books/ng-interactive/2016/sep/03/tinker-tailor-writer-spy-the-many-lives-of-john-le-carre-in-his-own-words"
+
+    </script>
+
+
+        <div class="overlay--hidden" data-role="overlay">
+    <div class="overlay__messageBox">
+        <div class="overlay__close"></div>
+        <div class="overlay__image"></div>
+        <div>
+            <span class="overlay__text">An email has been sent to your Guardian email address. To preview this page in the app, open your email on the device and follow the instructions.</span>
+            <span class="overlay__ok">Ok</span>
+        </div>
+    </div>
+</div>
+
+
+        <!-- start Mixpanel -->
+        <script type="text/javascript">(function(e,b){if(!b.__SV){var a,f,i,g;window.mixpanel=b;b._i=[];b.init=function(a,e,d){function f(b,h){var a=h.split(".");2==a.length&&(b=b[a[0]],h=a[1]);b[h]=function(){b.push([h].concat(Array.prototype.slice.call(arguments,0)))}}var c=b;"undefined"!==typeof d?c=b[d]=[]:d="mixpanel";c.people=c.people||[];c.toString=function(b){var a="mixpanel";"mixpanel"!==d&&(a+="."+d);b||(a+=" (stub)");return a};c.people.toString=function(){return c.toString(1)+".people (stub)"};i="disable time_event track track_pageview track_links track_forms register register_once alias unregister identify name_tag set_config people.set people.set_once people.increment people.append people.union people.track_charge people.clear_charges people.delete_user".split(" ");
+for(g=0;g<i.length;g++)f(c,i[g]);b._i.push([a,e,d])};b.__SV=1.2;a=e.createElement("script");a.type="text/javascript";a.async=!0;a.src="undefined"!==typeof MIXPANEL_CUSTOM_LIB_URL?MIXPANEL_CUSTOM_LIB_URL:"file:"===e.location.protocol&&"//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js".match(/^\/\//)?"https://cdn.mxpnl.com/libs/mixpanel-2-latest.min.js":"//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js";f=e.getElementsByTagName("script")[0];f.parentNode.insertBefore(a,f)}})(document,window.mixpanel||[]);
+mixpanel.init("d7f800e4a32e7b641dc2c5aa3bcc5e6b");</script>
+        <!-- end Mixpanel -->
+        <script src="/assets/jspm_packages/76a44478c9d880ec3b25affdc764c4af-system.js"></script>
+        <script src="/assets/a43730483f15ea27ffb23f26432faaec-config.js"></script>
+        <script>
+            if ( System.bundles['build.js'] ) {
+                System.bundles['/assets/cbb1da80e352b50a32c8a18eb333c34d-build.js'] = System.bundles['build.js'];
+                delete System.bundles['build.js'];
+            }
+        </script>
+
+        <script>
+          System
+            .import('javascript/main')
+            .catch(function(err){
+              console.error(err);
+            })
+        </script>
+
+
+    </body>
+</html>
+

@@ -1,0 +1,102 @@
+@import "fonts";
+@import "palette";
+@import "mq";
+@import "general";
+@import "share";
+
+//header
+.where-to-go-header {
+  &--image{
+    min-height: 600px;
+    background-image: url('https://uploads.guim.co.uk/2016/11/21/yosemite_mobile_low.jpg');
+    width: 100%;
+    background-size: 100%;
+    background-position:center;
+    position: relative;
+    background-repeat: no-repeat;
+
+    @include mq($from: mobileLandscape) {
+      background-size: cover;
+      background-image: url('https://uploads.guim.co.uk/2016/11/22/yosemite_desktop_medium.jpg');
+      background-position: center center;
+    }
+  }
+
+  &--standfirst {
+    position: absolute;
+    bottom: 0px;
+    width: 45%;
+    color: white;
+    right: 8px;
+    line-height: 18px;
+  }
+}
+//menu
+.where-to-go-menu {
+  padding: 6px 8px 12px 8px;
+  min-height: 600px;
+  background-color: #7D7569;
+
+  ul{
+    margin: 12px 0px;
+    list-style: none;
+    column-count: 2;
+    -webkit-column-count:2;
+    -moz-column-count:2;
+    font-family: "Guardian Sans Web", "Guardian Agate Sans 1 Web", sans-serif;
+    color: white;
+
+    li {
+      padding-bottom: 6px;
+      border-bottom: 1px solid rgba(255,255,255,0.5);
+    }
+  }
+
+  .title {
+    color: white;
+  }
+}
+
+.section-header{
+  &--image {
+    overflow: hidden;
+    min-height: 600px;
+    background-color: #333;
+    position: relative;
+    
+    img{
+      position: absolute;
+
+      @include mq($from: tablet) {
+      width: 100%;
+      height: auto;
+      display: block;
+      }
+    }
+  }
+
+  &--title {
+    margin-left: auto;
+    margin-right: auto;
+    height: 300px;
+    width: 200px;
+    z-index: 1000;
+    position: relative;
+    top: 150px;
+
+    svg{
+      width: 100%;
+      height: auto;
+    }
+  }
+}
+
+.section {
+  &.copy {
+    padding: 8px;
+    display: none;
+    @include mq($from: tablet) {
+      display: block;
+    }
+  }
+}
